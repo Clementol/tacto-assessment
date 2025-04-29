@@ -19,7 +19,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
                 ],
                 ssl: true,
                 autoLoadEntities: true,
-                synchronize: true// configService.getOrThrow('POSTGRES_SYNCHRONIZE')
+                synchronize: true// Not advisable for prod
             }),
             inject: [ConfigService]
         })

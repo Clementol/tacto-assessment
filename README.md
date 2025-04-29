@@ -56,7 +56,11 @@ mutation {
 </p>
 
 ## Deployment Link:
-`https://tacto-assessment.onrender.com`
+```
+https://tacto-assessment.onrender.com
+```
 
 ### Introspection has been enabled for futther testing
-`https://tacto-assessment.onrender.com/graphql`
+```
+https://tacto-assessment.onrender.com/graphql
+```
