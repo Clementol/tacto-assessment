@@ -41,4 +41,22 @@ mutation {
 ```
 2. Login `localhost:PORT/auth/login`
 
+## Examples
 
+<p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="./static/pic1.png"  alt="Nest Logo" /></a>
+</p>
+
+<p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="./static/pic2.png"  alt="Nest Logo" /></a>
+</p>
+
+<p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="./static/pic3.png"  alt="Nest Logo" /></a>
+</p>
+
+## Deployment Link:
+`https://tacto-assessment.onrender.com`
+
+### Introspection has been enabled for futther testing
+`https://tacto-assessment.onrender.com/graphql`
