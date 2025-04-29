@@ -1,0 +1,71 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type AuthPayload {
+  accessToken: String!
+}
+
+input CreateAuthInput {
+  password: String!
+  username: String!
+}
+
+input CreateDepartmentInput {
+  name: String!
+  subDepartments: [CreateSubDepartmentInput!]
+}
+
+input CreateSubDepartmentInput {
+  name: String!
+}
+
+type DeleteMessage {
+  message: String!
+}
+
+type Department {
+  id: Float!
+  name: String!
+  subDepartments: [SubDepartment!]!
+}
+
+input LoginInput {
+  password: String!
+  username: String!
+}
+
+type Mutation {
+  createDepartment(createDepartmentInput: CreateDepartmentInput!): Department!
+  createSubDepartment(createSubDepartmentInput: CreateSubDepartmentInput!, id: Int!): SubDepartment!
+  createUser(createAuthInput: CreateAuthInput!): User!
+  deleteDepartment(id: Int!): DeleteMessage!
+  deleteSubDepartment(id: Int!): DeleteMessage!
+  login(loginInput: LoginInput!): AuthPayload!
+  updateDepartment(updateDepartmentInput: UpdateDepartmentInput!): Department!
+  updateSubDepartment(id: Int!, updateSubDepartmentInput: UpdateSubDepartmentInput!): SubDepartment!
+}
+
+type Query {
+  getDepartments: [Department!]!
+  getSubDepartments: [SubDepartment!]!
+}
+
+type SubDepartment {
+  id: Float!
+  name: String!
+}
+
+input UpdateDepartmentInput {
+  id: Int!
+  name: String
+  subDepartments: [CreateSubDepartmentInput!]
+}
+
+input UpdateSubDepartmentInput {
+  name: String
+}
+
+type User {
+  username: String!
+}

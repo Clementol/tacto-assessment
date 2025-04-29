@@ -1,0 +1,19 @@
+version: '3.9'
+services:
+
+  postgres:
+    image: postgres
+    container_name: postgres
+    restart: always
+    shm_size: 128mb
+    environment:
+      POSTGRES_PASSWORD: 'pass123'
+      POSTGRES_USER: postgres
+      POSTGRES_DB: organization
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
