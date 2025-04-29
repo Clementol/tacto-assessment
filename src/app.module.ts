@@ -25,6 +25,7 @@ import { appConfig } from './shared/src';
         const statusCode = extensions?.originalError?.['statusCode']
         return { message: extensions?.originalError?.['message'] || message, statusCode }
       },
+      introspection: true,
       graphiql: true,
       context: ({ req }) => ({ req }),
       validationRules: [

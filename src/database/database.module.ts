@@ -8,13 +8,12 @@ import { TypeOrmModule } from '@nestjs/typeorm';
             useFactory: (configService: ConfigService) => ({
                 type: 'postgres',
                 url: configService.getOrThrow('POSTGRES_URL'),
-                // password: 'kR73VVMVUgM3LQPJIBRori7opGmfBFaU',
+                // password: configService.getOrThrow('POSTGRES_PASSWORD'),
                 // host: configService.getOrThrow('POSTGRES_HOST'),
                 // port: configService.getOrThrow('POSTGRES_PORT'),
                 // database: configService.getOrThrow('POSTGRES_DB'),
                 // username: configService.getOrThrow('POSTGRES_USER'),
                 // password: configService.getOrThrow('POSTGRES_PASSWORD'),
-                // migrations: [''],
                 entities: [
                     __dirname + '/../**/*.entity{.ts,.js}',
                 ],
