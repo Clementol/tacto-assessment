@@ -4,7 +4,7 @@ import { AppService } from './app.service';
 import { DepartmentModule } from './department/department.module';
 import { ConfigModule } from '@nestjs/config';
 import { GraphQLModule } from '@nestjs/graphql';
-import deepLimit from 'graphql-depth-limit';
+import * as deepLimit from 'graphql-depth-limit';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { join } from 'path';
 import { DatabaseModule } from './database/database.module';
