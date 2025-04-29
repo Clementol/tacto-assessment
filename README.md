@@ -5,7 +5,12 @@
 
 <h1 style="text-align: center;" > Assessment</h1>
 
-
+### Tech Stack
+1. NestJS 
+2. GraphQL
+3. TypeORM
+4. Postgres
+5. TypeScript.
 
 ## Prerequisites
 1. Have NodeJs(LTS) installed on your system
